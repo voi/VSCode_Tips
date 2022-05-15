@@ -47,20 +47,22 @@
         "editor.tabSize": 2,
         "editor.suggest.insertMode": "replace"
     },
+    "files.autoGuessEncoding": true,
     "[c]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.tabSize": 4,
         "editor.useTabStops": true,
         "editor.insertSpaces": false,
+        "files.autoGuessEncoding": false,
         "files.encoding": "shiftjis"
     },
     "[cpp]": {
         "editor.tabSize": 4,
         "editor.useTabStops": true,
         "editor.insertSpaces": false,
+        "files.autoGuessEncoding": false,
         "files.encoding": "shiftjis"
     },
-    "files.autoGuessEncoding": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -71,5 +73,8 @@
                 }
             }
         ]
+    },
+    "files.associations": {
+        "*.c": "c"
     }
 }
