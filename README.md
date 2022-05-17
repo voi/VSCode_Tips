@@ -44,8 +44,8 @@ exeのあるフォルダに`data`フォルダがあるとポータブル運用�
 
 textMateのスコープはコマンドパレットでscopeといれるとトークンとスコープを確認できるコマンドがあるので、そのコマンドを実行して確認する。
 
-*	https://www.sublimetext.com/docs/scope_naming.html
-*	https://github.com/microsoft/vscode-markdown-tm-grammar/pull/13
+*	[Sublime Text - Scope Naming](https://www.sublimetext.com/docs/scope_naming.html)
+*	[microsoft / vscode-markdown-tm-grammar](https://github.com/microsoft/vscode-markdown-tm-grammar/pull/13)
 
 
 ### [特定の色だけ変更](https://qiita.com/tattcho/items/bf35c93ce90fbbc581c1)
@@ -56,8 +56,8 @@ textMateのスコープはコマンドパレットでscopeといれるとトー�
 }
 ~~~
 
-*	https://scrapbox.io/rashitamemo/VS_Code%E3%81%A7%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E3%81%AE%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%E3%81%AE%E9%85%8D%E8%89%B2%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B
-*	https://scrapbox.io/rashitamemo/VS_Code%E3%81%A7MarkDown%E3%81%AE%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B
+*	[VS Codeでマークダウンのシンタックスハイライトの配色を変更する](https://scrapbox.io/rashitamemo/VS_Code%E3%81%A7%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%E3%81%AE%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88%E3%81%AE%E9%85%8D%E8%89%B2%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B)
+*	[VS CodeでMarkDownのシンタックスカラーを変更する](https://scrapbox.io/rashitamemo/VS_Code%E3%81%A7MarkDown%E3%81%AE%E3%82%B7%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B)
 
 
 ## [スニペット](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
