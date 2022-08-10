@@ -1,71 +1,16 @@
 {
-    "editor.fontFamily": "PlemolJP,HackGen,Cica,'BIZ UDGothic','UD デジタル 教科書体 N-R', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 15,
-    "editor.useTabStops": true,
+    "editor.fontFamily": "HackGen,Cica,PlemolJP,'BIZ UDGothic','UD デジタル 教科書体 N-R', Consolas, 'Courier New', monospace",
     "editor.renderWhitespace": "boundary",
     "editor.minimap.enabled": false,
     "editor.renderControlCharacters": true,
-    "editor.glyphMargin": false,
     "editor.wordWrap": "off",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。「」【】『』（）！？",
+    "editor.wordBasedSuggestions": true,
+    "editor.wordBasedSuggestionsMode": "allDocuments",
     "editor.guides.bracketPairs": "active",
     "editor.bracketPairColorization.enabled": true,
-    "markdown-checkbox.checkmark": "x",
-    "markdown-checkbox.dateFormat": "YYYY-MM-DD hh:mm:ss",
-    "markdown-checkbox.italicWhenChecked": false,
-    "npm.autoDetect": "off",
-    "jake.autoDetect": "off",
-    "gulp.autoDetect": "off",
-    "grunt.autoDetect": "off",
-    "security.workspace.trust.untrustedFiles": "open",
-    "typescript.tsc.autoDetect": "off",
-    "window.autoDetectHighContrast": false,
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Ayu Light Bordered",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "update.mode": "none",
-    "files.exclude": {
-        "**/{.git,.svn,.hg,CVS,.DS_Store}": true,
-        "**/Thumbs.db": true,
-        "**/{.vs,x64}":true,
-        "**/*.{suo,user,exp,pdb,ilk}":true,
-        "**/*.{exe,dll,lib}":true,
-        "**/{OBJ,OBJ_DEBUG,Debug,Release}": true,
-        "**/*.fossil": true
-    },
-    "files.watcherExclude": {
-        "**/.git/**": true,
-        "**/.svn/**": true
-    },
-    "[json]": {
-        "editor.tabCompletion": "on",
-        "editor.insertSpaces": true,
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace"
-    },
-    "[html]": {
-        "editor.insertSpaces": true,
-        "editor.wordWrap": "off",
-        "editor.tabSize": 2,
-        "editor.suggest.insertMode": "replace"
-    },
-    "files.autoGuessEncoding": true,
-    "[c]": {
-        "diffEditor.ignoreTrimWhitespace": false,
-        "editor.tabSize": 4,
-        "editor.useTabStops": true,
-        "editor.insertSpaces": false,
-        "files.autoGuessEncoding": false,
-        "files.encoding": "shiftjis"
-    },
-    "[cpp]": {
-        "editor.tabSize": 4,
-        "editor.useTabStops": true,
-        "editor.insertSpaces": false,
-        "files.autoGuessEncoding": false,
-        "files.encoding": "shiftjis"
-    },
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -74,10 +19,107 @@
                     "foreground": "#CCCCCC",
                     "fontStyle": "strikethrough"
                 }
+            },
+            {
+                "scope": "punctuation.definition.heading.markdown",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "punctuation.definition.list.begin.markdown",
+                "settings": {
+                    "foreground": "#FFAA33",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "punctuation.definition.quote.begin.markdown",
+                "settings": {
+                    "foreground": "#4CBF99",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "markup.inline.raw.string.markdown",
+                "settings": {
+                    "foreground": "#ED9366"
+                }
+            },
+            {
+                "scope": "variable.language.this.cpp",
+                "settings": {
+                    "fontStyle": "italic"
+                }
             }
         ]
     },
-    "files.associations": {
-        "*.c": "c"
-    }
+    "files.autoGuessEncoding": true,
+    "files.exclude": {
+        "**/{.git,.svn,.gh,CVS,.DS_Store}": true,
+        "**/Thumbs.db": true,
+        "**/{.vs,x64}": true,
+        "**/*.{suo,user,exp,pdb,ilk}": true,
+        "**/*.{exe,dll,lib}": true,
+        "**/{OBJ,OBJ_DEBUG,Debug,Release}": true,
+        "**/*.fossil": true
+    },
+    "search.mode": "newEditor",
+    "search.seedWithNearestWord": true,
+    "search.showLineNumbers": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": true,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 16,
+    "workbench.colorTheme": "Oranji",
+    "update.mode": "none",
+    "[json]": {
+        "editor.tabCompletion": "on",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[c]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.useTabStops": true,
+        "editor.insertSpaces": false,
+        "editor.wordBasedSuggestions": true,
+        "editor.wordBasedSuggestionsMode": "allDocuments",
+        "files.autoGuessEncoding": false,
+        "files.encoding": "shiftjis"
+    },
+    "[cpp]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.useTabStops": true,
+        "editor.insertSpaces": false,
+        "editor.wordBasedSuggestions": true,
+        "editor.wordBasedSuggestionsMode": "allDocuments",
+        "files.autoGuessEncoding": false,
+        "files.encoding": "shiftjis"
+    },
+    "[markdown]": {
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.unicodeHighlight.ambiguousCharacters": true
+    },
+    "[planetext]": {
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.unicodeHighlight.ambiguousCharacters": true
+    },
+    "markdown-checkbox.checkmark": "x",
+    "markdown-checkbox.dateFormat": "YYYY-MM-DD hh:mm:ss",
+    "markdown-checkbox.italicWhenChecked": false,
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.debugShortcut": false,
+    "C_Cpp.default.browse.databaseFilename": "${env:TEMP}/vscode-cpptools",
+    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+    "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+    "C_Cpp.intelliSenseCachePath": "${env:TEMP}/vscode-cpptools",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "vscode-neovim.neovimExecutablePaths.win32": "${env:HOME}\\scoop\\apps\\neovim\\current\\bin\\nvim.exe"
 }

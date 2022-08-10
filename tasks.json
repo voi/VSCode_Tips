@@ -11,7 +11,7 @@
     "presentation": {
         "echo": false,
         "reveal": "always",
-        "focus": true,
+        "focus": false,
         "panel": "shared",
         "showReuseMessage": true,
         "clear": true
