@@ -1,6 +1,7 @@
 {
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.enabled": true,
+    "editor.find.autoFindInSelection": "multiline",
     "editor.fontFamily": "'Cascadia Mono', 'BIZ UDGothic', 'UD デジタル 教科書体 N-R', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.formatOnPaste": false,
@@ -12,6 +13,9 @@
     "editor.renderWhitespace": "boundary",
     "editor.scrollbar.horizontal": "visible",
     "editor.scrollbat.vertical": "visible",
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.unicodeHighlight.includeComments": true,
     "editor.unicodeHighlight.invisibleCharacters": true,
     "editor.useTabStops": true,
@@ -84,6 +88,7 @@
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Oranji",
     "workbench.editor.splitInGroupLayout": "vertical",
+    "workbench.settings.enableNaturalLanguageSearch": false,
     "[json]": {
         "editor.tabCompletion": "on",
         "editor.insertSpaces": true,
