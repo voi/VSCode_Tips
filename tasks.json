@@ -2,25 +2,90 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
-    "type": "shell",
-    "options": {
-        "shell": {
-            "executable": "powershell.exe"
-        }
-    },
-    "presentation": {
-        "echo": false,
-        "reveal": "always",
-        "focus": false,
-        "panel": "shared",
-        "showReuseMessage": true,
-        "clear": true
-    },
     "tasks": [
         {
+            "label": "markdown todo list",
+            "type":"shell",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe"
+                }
+            },
+            "command":[
+                "Select-String",
+                "-Encoding UTF8",
+                "-Pattern '^\\s*(?:>\\s*)*[-+*]\\s+\\[ \\]\\s'",
+                "-Path", "${file}"
+            ],
+            "problemMatcher":{
+                "owner": "markdown",
+                "fileLocation":"relative",
+                "pattern":{
+                    "regexp": "^([^:]+):(\\d+):\\s*(?:>\\s*)*[-+*]\\s+\\[ \\]\\s(.*)",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                }
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "revealProblems": "onProblem",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
             "label": "svn modify list",
+            "type": "shell",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe"
+                }
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true
+            },
             "command": "${env:USERPROFILE}\\Documents\\svnsttree.ps1",
-            "args": ["${fileDirname}"]
+            "args": ["${fileDirname}"],
+            "problemMatcher": [],
+        },
+        {
+            "label": "[File] svn log",
+            "type": "process",
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "command": "TortoiseProc.exe",
+            "args": ["${file}"],
+            "problemMatcher": []
+        },
+        {
+            "label": "[Workspace] svn log",
+            "type": "process",
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "command": "TortoiseProc.exe",
+            "args": ["${workspaceFolder}"],
+            "problemMatcher": []
         }
     ]
 }
