@@ -1,29 +1,36 @@
 {
-    "editor.accessibilitySupport": "off",
-    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorWidth": 3,
     "editor.find.autoFindInSelection": "multiline",
     "editor.fontFamily": "'Cascadia Mono', 'BIZ UDGothic', 'UD デジタル 教科書体 N-R', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 13,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
-    "editor.formatOnType": false,
+    "editor.fontSize": 14,
+    "editor.insertSpaces": false,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
-    "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "boundary",
-    "editor.scrollbar.horizontal": "visible",
-    "editor.scrollbat.vertical": "visible",
     "editor.snippetSuggestions": "top",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "editor.unicodeHighlight.includeComments": true,
-    "editor.unicodeHighlight.invisibleCharacters": true,
-    "editor.useTabStops": true,
-    "editor.wordBasedSuggestions": true,
-    "editor.wordBasedSuggestionsMode": "allDocuments",
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。「」【】『』（）！？",
-    "editor.wordWrap": "off",
     "editor.tokenColorCustomizations": {
+        "[Monokai Dimmed]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.paragraph.markdown",
+                    "settings": {
+                        "foreground": "#F8F8F8"
+                    }
+                }
+            ]
+        },
+        "[Quiet Light]": {
+            "textMateRules": [
+                {
+                    "scope": "meta.paragraph.markdown",
+                    "settings": {
+                        "foreground": "#030303"
+                    }
+                }
+            ]
+        },
         "textMateRules": [
             {
                 "scope": "markup.strikethrough",
@@ -70,8 +77,8 @@
     "search.searchOnType": false,
     "search.seedWithNearestWord": true,
     "search.showLineNumbers": true,
-    "files.defaultLanguage": "{activeEditorLanguage}",
     "files.autoGuessEncoding": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
     "files.exclude": {
         "**/{.git,.svn,.gh,CVS,.DS_Store}": true,
         "**/Thumbs.db": true,
@@ -85,22 +92,11 @@
     "terminal.integrated.shellIntegration.history": 25,
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "none",
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Oranji",
-    "workbench.editor.splitInGroupLayout": "vertical",
     "workbench.settings.enableNaturalLanguageSearch": false,
-    "[json]": {
-        "editor.tabCompletion": "on",
-        "editor.insertSpaces": true,
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace"
-    },
+    "workbench.startupEditor": "none",
     "[c]": {
         "editor.detectIndentation": false,
         "editor.tabSize": 4,
-        "editor.useTabStops": true,
         "editor.insertSpaces": false,
         "editor.wordBasedSuggestions": true,
         "files.autoGuessEncoding": false,
@@ -109,19 +105,21 @@
     "[cpp]": {
         "editor.detectIndentation": false,
         "editor.tabSize": 4,
-        "editor.useTabStops": true,
         "editor.insertSpaces": false,
         "editor.wordBasedSuggestions": true,
         "files.autoGuessEncoding": false,
         "files.encoding": "shiftjis"
     },
     "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": true,
         "editor.unicodeHighlight.invisibleCharacters": true,
         "editor.insertSpaces": false,
         "editor.detectIndentation" :false
     },
     "[planetext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": true,
         "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.insertSpaces": false,
         "editor.detectIndentation" :false
     },
     "markdown-checkbox.checkmark": "x",
@@ -134,5 +132,6 @@
     "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
     "C_Cpp.intelliSenseCachePath": "${env:TEMP}/vscode-cpptools",
     "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "vscode-neovim.neovimExecutablePaths.win32": "${env:HOME}\\scoop\\apps\\neovim\\current\\bin\\nvim.exe"
+    "vscode-neovim.neovimExecutablePaths.win32": "${env:HOME}\\scoop\\apps\\neovim\\current\\bin\\nvim.exe",
+    "workbench.colorTheme": "Kai Light Accent"
 }
