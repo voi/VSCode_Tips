@@ -92,6 +92,7 @@
     "terminal.integrated.shellIntegration.history": 25,
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "none",
+    "workbench.editor.languageDetection": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.startupEditor": "none",
     "[c]": {
@@ -133,5 +134,7 @@
     "C_Cpp.intelliSenseCachePath": "${env:TEMP}/vscode-cpptools",
     "C_Cpp.intelliSenseEngine": "Tag Parser",
     "vscode-neovim.neovimExecutablePaths.win32": "${env:HOME}\\scoop\\apps\\neovim\\current\\bin\\nvim.exe",
-    "workbench.colorTheme": "Kai Light Accent"
+    "workbench.colorTheme": "Default Light+",
+    "editor.accessibilitySupport": "off",
+    "powershell.integratedConsole.showOnStartup": false
 }
