@@ -53,7 +53,7 @@
                 "showReuseMessage": false,
                 "clear": true
             },
-            "command": "${env:USERPROFILE}\\Documents\\svnsttree.ps1",
+            "command": "${execPath}\\data\\user-data\\User\\svnsttree.ps1",
             "args": ["${fileDirname}"],
             "problemMatcher": [],
         },
