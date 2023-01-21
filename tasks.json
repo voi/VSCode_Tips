@@ -18,9 +18,9 @@
                 "-Path", "${file}"
             ],
             "problemMatcher":{
-                "owner": "markdown",
-                "fileLocation":"relative",
+                "fileLocation":"autoDetect",
                 "pattern":{
+                    "kind": "location",
                     "regexp": "^([^:]+):(\\d+):\\s*(?:>\\s*)*[-+*]\\s+\\[ \\]\\s(.*)",
                     "file": 1,
                     "location": 2,

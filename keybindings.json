@@ -1,0 +1,48 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+	{
+		"key": "ctrl+F8",
+		"command": "editor.actions.findWithArgs",
+		"args": {
+			"searchString": "^(\\s*[-+*]\\s)\\[ \\](\\s*)(\\S.*)",
+			"replaceString": "$1[x]$2~~$3~~",
+			"isRegex": true,
+			"findInSelection": true
+		},
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+F9",
+		"command": "editor.actions.findWithArgs",
+		"args": {
+			"searchString": "^(\\s*[-+*]\\s)\\[[xX]\\](\\s*)(?:~~)?([^~]+)(?:~~)?",
+			"replaceString": "$1[ ]$2$3",
+			"isRegex": true,
+			"findInSelection": true
+		},
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k ctrl+oem_3",
+		"command": "outline.focus"
+	},
+	{
+		"key": "ctrl+k 1",
+		"command": "vscode-macros.user1",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k 2",
+		"command": "vscode-macros.user2",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k 3",
+		"command": "vscode-macros.user3",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k 4",
+		"command": "vscode-macros.user4"
+	}
+]
