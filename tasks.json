@@ -6,6 +6,11 @@
         {
             "label": "markdown todo list",
             "type":"shell",
+            "icon": {
+                "color": "terminal.ansiGreen",
+                "id": "vm-active"
+            },
+            "detail": "GFMのTODOリストを列挙する",
             "options": {
                 "shell": {
                     "executable": "powershell.exe"

@@ -1,17 +1,24 @@
 {
+    /* https://github.com/github/gitignore */
     "editor.accessibilitySupport": "off",
     "editor.cursorWidth": 3,
     "editor.find.autoFindInSelection": "multiline",
     "editor.fontFamily": "PlemolJP, Cascadia Mono, BIZ UDGothic, UD デジタル 教科書体 N-R, Consolas, Courier New, monospace",
-    "editor.fontSize": 15,
-    "editor.insertSpaces": false,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [0],
-    "editor.snippetSuggestions": "top",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。「」【】『』（）！？",
+    "explorer.excludeGitIgnore": true,
+    "extensions.ignoreRecommendations": true,
+    "search.mode": "newEditor",
+    "search.searchOnType": false,
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "workbench.colorTheme": "Tomorrow Night Bright",
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.startupEditor": "none",
     "editor.tokenColorCustomizations": {
         "[Monokai Dimmed]": {
             "textMateRules": [
@@ -75,40 +82,15 @@
             }
         ]
     },
-    "search.mode": "newEditor",
-    "search.searchOnType": false,
-    "search.seedWithNearestWord": true,
-    "search.showLineNumbers": true,
-    "files.autoGuessEncoding": true,
-    "files.defaultLanguage": "${activeEditorLanguage}",
-    "files.exclude": {
-        "**/{.git,.svn,.gh,CVS,.DS_Store}": true,
-        "**/Thumbs.db": true,
-        "**/{.vs,x64}": true,
-        "**/*.{suo,user,exp,pdb,ilk}": true,
-        "**/*.{exe,dll,lib}": true,
-        "**/{OBJ,OBJ_DEBUG,Debug,Release}": true,
-        "**/*.fossil": true
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.shellIntegration.history": 25,
-    "update.enableWindowsBackgroundUpdates": false,
-    "update.mode": "none",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.startupEditor": "none",
     "[c]": {
         "editor.detectIndentation": false,
-        "editor.tabSize": 4,
         "editor.insertSpaces": false,
-        "editor.wordBasedSuggestions": true,
         "files.autoGuessEncoding": false,
         "files.encoding": "shiftjis"
     },
     "[cpp]": {
         "editor.detectIndentation": false,
-        "editor.tabSize": 4,
         "editor.insertSpaces": false,
-        "editor.wordBasedSuggestions": true,
         "files.autoGuessEncoding": false,
         "files.encoding": "shiftjis"
     },
@@ -118,21 +100,10 @@
         "editor.insertSpaces": false,
         "editor.detectIndentation" :false
     },
-    "[planetext]": {
-        "editor.unicodeHighlight.ambiguousCharacters": true,
-        "editor.unicodeHighlight.invisibleCharacters": true,
-        "editor.insertSpaces": false,
-        "editor.detectIndentation" :false
-    },
-    "C_Cpp.autocomplete": "disabled",
     "C_Cpp.debugShortcut": false,
     "C_Cpp.default.browse.databaseFilename": "${env:TEMP}/vscode-cpptools",
-    "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
-    "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+    "C_Cpp.default.intelliSenseMode": "windows-msvc-x86",
     "C_Cpp.intelliSenseCachePath": "${env:TEMP}/vscode-cpptools",
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "powershell.integratedConsole.showOnStartup": false,
-    "workbench.colorTheme": "hendrikkels-light",
     "vscodemacros.macroFilePath": "{VSCODE_PORTABLE}\\user-data\\User\\macros.js",
     "vscodemacros.userMacroCommands": [
         {
@@ -151,5 +122,5 @@
             "path": "{VSCODE_PORTABLE}/user-data/User/macros.js",
             "name": "AlignTexts"
         }
-    ]
+    ],
 }
